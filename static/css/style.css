@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #d4a373;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+}
+
+.navbar-brand {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.jumbotron {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #b8860b;
+    border-color: #b8860b;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #b8860b;
+        --secondary-color: #333333;
+        --text-color: #ffffff;
+    }
+}
